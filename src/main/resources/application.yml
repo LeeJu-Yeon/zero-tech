@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/reservation_db
+    username: zero_user
+    password: zero1234
+
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  jwt:
+    secret: emVyb2Jhc2UtcmVzZXJ2YXRpb24tcHJvamVjdC1qd3Qtc2VjcmV0LWtleQo=
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
